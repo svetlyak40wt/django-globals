@@ -5,6 +5,8 @@ class Global(object):
         globals.request = request
         if hasattr(request, 'user'):
             globals.user = request.user
+        else:
+            globals.user = None
 
 # retrocompatibility
 class User(Global):
