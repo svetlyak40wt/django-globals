@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name = 'django-globals',
-    version = '0.2.0',
+    version = '0.2.1',
     description = 'Very simple application, that allow to define a thread specific global variables.',
     keywords = 'django apps',
     license = 'New BSD License',

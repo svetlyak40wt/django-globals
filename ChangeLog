@@ -1,6 +1,14 @@
 ChangeLog for django-globals
 ============================
 
+0.2.1
+-----
+
+* Request and user properties can now be accessed outside Django context
+or w/o `django_globals.middleware.Global` middleware.
+* Added lazy `get_current_user()` method to easier handle cases when user
+did change within request.
+
 0.2.0
 -----
 
