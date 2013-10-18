@@ -1,9 +1,10 @@
-from django_globals import globals
+from django_globals import globals, get_current_user
 
 class Global(object):
     def process_request(self, request):
         globals.request = request
-        globals.user = getattr(request, 'user', None)
+        globals.user = get_current_user()
+
 
 # retrocompatibility
 class User(Global):
