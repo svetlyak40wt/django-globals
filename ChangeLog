@@ -1,6 +1,11 @@
 ChangeLog for django-globals
 ============================
 
+0.2.1
+-----
+
+* A special code was added to send ReST version of readme to pypi.
+
 0.2.0
 -----
 
