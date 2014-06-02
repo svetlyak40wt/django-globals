@@ -5,6 +5,16 @@ class Global(object):
         globals.request = request
         globals.user = getattr(request, 'user', None)
 
+    @staticmethod
+    def get_user():
+        if hasattr(globals, 'user'):
+            return globals.user
+
+    @staticmethod
+    def get_request():
+        if hasattr(globals, 'request'):
+            return globals.request
+
 # retrocompatibility
 class User(Global):
     def __init__(self, *args, **kwargs):
