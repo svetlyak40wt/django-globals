@@ -1,7 +1,7 @@
 Django-globals
 --------------
 
-[![changelog](http://allmychanges.com/u/svetlyak40wt/python/django-globals/badge)](http://allmychanges.com/u/svetlyak40wt/python/django-globals/)
+[![changelog](http://allmychanges.com/p/python/django-globals/badge)](http://allmychanges.com/p/python/django-globals/)
 
 Django-globals, is a very simple application, that allow to define
 a thread specific global variables.
