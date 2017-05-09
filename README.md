@@ -16,7 +16,7 @@ Installation
 Install `django_globals` using pip.
 
 Next, add `django_globals` to the INSTALLED_APPS and
-`django_globals.middleware.Global` to the MIDDLEWARE_CLASSES.
+`django_globals.middleware.Global` to the `MIDDLEWARE` setting.
 
 Now you can make `from django_globals import globals` and access to
 the `globals.request` and `globals.user` from anywhere.
