@@ -1,6 +1,12 @@
 ChangeLog for django-globals
 ============================
 
+UNRELEASED
+----------
+
+* Removed deprecated `django_globals.middleware.User`. Use
+  `django_globals.middleware.Global` instead.
+
 0.2.1
 -----
 
