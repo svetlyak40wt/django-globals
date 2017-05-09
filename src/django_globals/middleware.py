@@ -5,6 +5,11 @@ class Global(object):
         globals.request = request
         globals.user = getattr(request, 'user', None)
 
+    def process_response(self, request, response):
+        del globals.request
+        del globals.user
+        return response
+
 # retrocompatibility
 class User(Global):
     def __init__(self, *args, **kwargs):

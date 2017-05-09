@@ -1,6 +1,12 @@
 ChangeLog for django-globals
 ============================
 
+UNRELEASED
+----------
+
+* Invalidate global variables `request` and `response` at the end of the
+  request/response cycle.
+
 0.2.1
 -----
 
