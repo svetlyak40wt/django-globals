@@ -36,7 +36,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     package_dir = {'': 'src'},
-    packages = find_packages('src', exclude = ['example']),
+    packages = find_packages('src'),
     include_package_data = True,
 )
 
