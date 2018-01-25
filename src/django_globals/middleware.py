@@ -9,14 +9,3 @@ class Global(object):
         del globals.request
         del globals.user
         return response
-
-# retrocompatibility
-class User(Global):
-    def __init__(self, *args, **kwargs):
-        import warnings
-        warnings.warn(
-            'The `django_globals.middleware.User` middleware is deprecated, you should use `django_globals.middleware.Global`',
-            DeprecationWarning,
-            stacklevel=2
-        )
-        super(User, self).__init__(*args, **kwargs)

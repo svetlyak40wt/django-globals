@@ -6,6 +6,8 @@ UNRELEASED
 
 * Invalidate global variables `request` and `response` at the end of the
   request/response cycle.
+* Removed deprecated `django_globals.middleware.User`. Use
+  `django_globals.middleware.Global` instead.
 
 0.2.1
 -----
