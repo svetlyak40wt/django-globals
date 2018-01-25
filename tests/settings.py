@@ -1,6 +1,8 @@
 # -*- coding: utf-8
 from __future__ import unicode_literals, absolute_import
 
+import django
+
 DEBUG = True
 USE_TZ = True
 
@@ -27,10 +29,17 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE_CLASSES_TEMP = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 
     "django_globals.middleware.Global",
 )
+
+if django.VERSION < (1, 10, 0,):
+    # old style
+    MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES_TEMP
+else:
+    # new style
+    MIDDLEWARE = MIDDLEWARE_CLASSES_TEMP
