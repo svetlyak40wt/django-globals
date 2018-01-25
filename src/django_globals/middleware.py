@@ -12,13 +12,7 @@ class Global(MiddlewareMixin):
         globals.request = request
         globals.user = getattr(request, 'user', None)
 
-# retrocompatibility
-class User(Global):
-    def __init__(self, *args, **kwargs):
-        import warnings
-        warnings.warn(
-            'The `django_globals.middleware.User` middleware is deprecated, you should use `django_globals.middleware.Global`',
-            DeprecationWarning,
-            stacklevel=2
-        )
-        super(User, self).__init__(*args, **kwargs)
+    def process_response(self, request, response):
+        del globals.request
+        del globals.user
+        return response
