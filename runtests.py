@@ -2,10 +2,9 @@
 # -*- coding: utf-8
 from __future__ import unicode_literals, absolute_import
 
+import django
 import os
 import sys
-
-import django
 from django.conf import settings
 from django.test.utils import get_runner
 
