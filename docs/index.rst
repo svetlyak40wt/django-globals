@@ -22,12 +22,12 @@ Configuration
 In your project's `settings.py`, add `django_globals.middleware.Global` to `MIDDLEWARE`
 (or `MIDDLEWARE_CLASSES` on Django < 1.10).  eg::
 
-   MIDDLEWARE_CLASSES = (
+   MIDDLEWARE = (
        'django.contrib.sessions.middleware.SessionMiddleware',
        'django.middleware.common.CommonMiddleware',
        'django.contrib.auth.middleware.AuthenticationMiddleware',
 
-       "django_globals.middleware.Global",
+       'django_globals.middleware.Global',
    )
 
 
