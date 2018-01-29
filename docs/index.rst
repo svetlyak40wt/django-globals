@@ -19,8 +19,8 @@ Install using pip::
 Configuration
 -------------
 
-In your project's `settings.py`, add `django_globals.middleware.Global` to `MIDDLEWARE`
-(or `MIDDLEWARE_CLASSES` on Django < 1.10).  eg::
+In your project's ``settings.py``, add ``django_globals.middleware.Global`` to ``MIDDLEWARE``
+(or ``MIDDLEWARE_CLASSES`` on Django < 1.10).  eg::
 
    MIDDLEWARE = (
        'django.contrib.sessions.middleware.SessionMiddleware',
@@ -34,8 +34,8 @@ In your project's `settings.py`, add `django_globals.middleware.Global` to `MIDD
 Usage
 -----
 
-Now you can use `from django_globals import globals` and access to
-the `globals.request` and `globals.user` from anywhere.
+Now you can use ``from django_globals import globals`` and access to
+the ``globals.request`` and ``globals.user`` from anywhere.
 
 
 .. toctree::
