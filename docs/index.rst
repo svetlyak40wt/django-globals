@@ -40,7 +40,6 @@ the `globals.request` and `globals.user` from anywhere.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    changes
 
