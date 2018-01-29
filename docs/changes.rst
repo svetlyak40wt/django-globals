@@ -1,5 +1,5 @@
-ChangeLog for django-globals
-============================
+Changelog
+=========
 
 UNRELEASED
 ----------
@@ -20,8 +20,8 @@ UNRELEASED
 
 * The middleware now save the user AND the request.
 * The `django_globals.middleware.User` middleware is replaced by the
-  `django_globals.middleware.Global` (but it's kept for retrocompatibility with
-  a decrecation warning)
+  `django_globals.middleware.Global` (but it's kept for retro-compatibility with
+  a deprecation warning)
 
 0.1.0
 -----

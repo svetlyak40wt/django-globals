@@ -34,7 +34,7 @@ MIDDLEWARE_CLASSES_TEMP = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 
-    "django_globals.middleware.Global",
+    'django_globals.middleware.Global',
 )
 
 if django.VERSION < (1, 10, 0,):
