@@ -1,5 +1,5 @@
-ChangeLog for django-globals
-============================
+Changelog
+=========
 
 UNRELEASED
 ----------

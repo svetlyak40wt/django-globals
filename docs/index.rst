@@ -1,14 +1,48 @@
-.. Django Globals documentation master file, created by
-   sphinx-quickstart on Mon Jan 29 14:40:42 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Django Globals - Thread specific global variables
+=================================================
 
-Welcome to Django Globals's documentation!
-==========================================
+Django-globals is a very simple application, that allow to define
+thread specific global variables.
+
+It includes a middleware Global, which can be used to access to
+the current, which is useful outside of a view when the "request" variable is not
+defined.
+
+Installation
+------------
+
+Install using pip::
+
+   pip install django_globals
+
+
+Configuration
+-------------
+
+In your project's `settings.py`, add `django_globals.middleware.Global` to `MIDDLEWARE`
+(or `MIDDLEWARE_CLASSES` on Django < 1.10).  eg::
+
+   MIDDLEWARE_CLASSES = (
+       'django.contrib.sessions.middleware.SessionMiddleware',
+       'django.middleware.common.CommonMiddleware',
+       'django.contrib.auth.middleware.AuthenticationMiddleware',
+
+       "django_globals.middleware.Global",
+   )
+
+
+Usage
+-----
+
+Now you can use `from django_globals import globals` and access to
+the `globals.request` and `globals.user` from anywhere.
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   changes
 
 
 
