@@ -18,7 +18,7 @@ except ImportError:
 
 setup(
     name='django-globals',
-    version='0.2.1',
+    version='0.3.0',
     description='Very simple application, that allow to define a thread specific global variables.',
     long_description=long_description,
     keywords='django apps',

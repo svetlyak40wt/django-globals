@@ -1,8 +1,8 @@
 Changelog
 =========
 
-UNRELEASED
-----------
+0.3.0
+-----
 
 * Add support for new Django `MIDDLEWARE` setting introduced in Django 1.10.
 * Invalidate global variables `request` and `response` at the end of the
