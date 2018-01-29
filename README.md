@@ -7,7 +7,7 @@ Django-globals is a very simple application, that allow to define
 thread specific global variables.
 
 It includes a middleware Global, which can be used to access to
-the current, which is useful outside of a view when the "request" variable is not
+the current request and user, which is useful outside of a view when the "request" variable is not
 defined.
 
 ## Installation
