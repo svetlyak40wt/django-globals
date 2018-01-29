@@ -1,7 +1,7 @@
 Django Globals - Thread specific global variables
 =================================================
 
-Django-globals is a very simple application, that allow to define
+Django-globals is a very simple application, that allow you to define
 thread specific global variables.
 
 It includes a middleware Global, which can be used to access to

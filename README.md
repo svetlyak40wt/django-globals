@@ -3,7 +3,7 @@ Django-globals
 
 [![changelog](http://allmychanges.com/p/python/django-globals/badge)](http://allmychanges.com/p/python/django-globals/)
 
-Django-globals is a very simple application, that allow to define
+Django-globals is a very simple application, that allow you to define
 thread specific global variables.
 
 It includes a middleware Global, which can be used to access to
