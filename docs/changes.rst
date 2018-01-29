@@ -4,11 +4,11 @@ Changelog
 0.3.0
 -----
 
-* Add support for new Django `MIDDLEWARE` setting introduced in Django 1.10.
-* Invalidate global variables `request` and `response` at the end of the
+* Add support for new Django ``MIDDLEWARE`` setting introduced in Django 1.10.
+* Invalidate global variables ``request`` and ``response`` at the end of the
   request/response cycle.
-* Removed deprecated `django_globals.middleware.User`. Use
-  `django_globals.middleware.Global` instead.
+* Removed deprecated ``django_globals.middleware.User``. Use
+  ``django_globals.middleware.Global`` instead.
 
 0.2.1
 -----
@@ -19,8 +19,8 @@ Changelog
 -----
 
 * The middleware now save the user AND the request.
-* The `django_globals.middleware.User` middleware is replaced by the
-  `django_globals.middleware.Global` (but it's kept for retro-compatibility with
+* The ``django_globals.middleware.User`` middleware is replaced by the
+  ``django_globals.middleware.Global`` (but it's kept for retro-compatibility with
   a deprecation warning)
 
 0.1.0
