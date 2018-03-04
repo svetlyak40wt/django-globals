@@ -1,14 +1,22 @@
-# Config file for automatic testing at travis-ci.org
-
-language: python
 cache: pip
-python:
-  - 3.6
-  - 3.5
-  - 3.4
-  - 3.3
-  - 2.7
-  - pypy
-  - pypy3
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: therefromhere
+  password:
+    secure: E2kA/vpxbwgaS3wAirIaaKKjQqrwrIYHXkiyLgKN/UASexAwswEkqKrMVZnEl7W6MZoz0GMv1wtM45dBvo4zVNKwlMV7iH4CvQmTyC3VKKI0fEKVYeN4J5EAxHL0NLdu588MoBukVO468ma6jl+1ot+vR/ioIHGXDOJD3GIKYck+aTxuNRVud91MO+fU5yrz9NrgyFIKjPx1e4NrWtjXAz+fna6MNsI+Dwjkrtojzl/AwQkUMRrtudgNctwfup5kxmvKapNjPEYinCQ5XNHJ6NyECnGXxRxHuveFQNaf5iR3Mkqh/CyGtdFmmlozEr7V2vXC+t6A3GyfPW7yjH2PgFR4ITJmF31sSeCcd6twgbbBkHTa/DSQAbl8khvgXMhh8uKxP04cqP/GcbFhTIF+gZFkRGmEbvU/r7zGpFRwRfrVvMxBvDiN4PLeTPia1HWilYHuVz0URBjy3vhkM4QLEUUdSxkdOezxhWtbowZQjQDALdsiIuncHeLgyz1olvd//Hb9CLNGlvk/VzCLnTI9Vua94gK1pC74f1v1ZBFy4noGo2GfboBIrUmrpS77ubj98snAxdysxC7ZUw3NschTfWSRzBvRK8jXdGjg218X52JZ98C7thwGIuzX2ftEFC8SH5XMdcTg8fx8RiEEYMaeItxnEjXUiMHcQaejd9QevE0=
+  on:
+    python: 2.7
+    repo: therefromhere/django-globals
+    tags: true
 install: pip install tox-travis
+language: python
+python:
+- 3.6
+- 3.5
+- 3.4
+- 3.3
+- 2.7
+- pypy
+- pypy3
 script: tox
