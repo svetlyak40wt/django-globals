@@ -13,6 +13,12 @@ class Global(MiddlewareMixin):
         globals.user = getattr(request, 'user', None)
 
     def process_response(self, request, response):
-        del globals.request
-        del globals.user
+        # check for attribute before deleting because in some cases (eg Django<1.10-style MIDDLEWARE_CLASSES)
+        # process_request may not have been called.
+        if hasattr(globals, 'request'):
+            del globals.request
+
+        if hasattr(globals, 'user'):
+            del globals.user
+
         return response
