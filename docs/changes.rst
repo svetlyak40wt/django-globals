@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3.1
+-----
+
+* Bugfix for 0.3.0 - handle AttributeError due to short-circuiting behaviour of old-style middleware
+
 0.3.0
 -----
 
