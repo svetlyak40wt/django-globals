@@ -1,20 +1,6 @@
 from setuptools import setup, find_packages
 
-long_description = open('README.md').read()
-
-try:
-    # trying to convert long description from markdown to ReST
-    # based on this article: https://coderwall.com/p/qawuyq
-
-    import pandoc
-
-    pandoc.core.PANDOC_PATH = 'pandoc'
-    doc = pandoc.Document()
-    doc.markdown = long_description
-    long_description = doc.rst
-
-except ImportError:
-    pass
+long_description = open('README.rst').read()
 
 setup(
     name='django-globals',
