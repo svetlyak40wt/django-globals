@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.3.2
+-----
+
+* Updated supported Django versions
+* Converted README to rst
+
 0.3.1
 -----
 
