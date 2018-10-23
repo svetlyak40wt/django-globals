@@ -12,11 +12,16 @@ deploy:
 install: pip install tox-travis
 language: python
 python:
-- 3.7-dev
 - 3.6
 - 3.5
 - 3.4
 - 2.7
 - pypy
 - pypy3
+matrix:
+  include:
+    - language: python
+      python: "3.7"
+      sudo: required
+      dist: xenial
 script: tox
