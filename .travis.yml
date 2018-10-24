@@ -18,6 +18,9 @@ python:
 - 2.7
 - pypy
 - pypy3
+# Current "official" way to configure Python 3.7 runtime in Travis using matrix include
+# based on https://github.com/travis-ci/travis-ci/issues/9069#issuecomment-425720905
+# shall be removed once Travis supports py37 in the normal way
 matrix:
   include:
     - language: python
