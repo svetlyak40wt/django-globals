@@ -3,3 +3,4 @@ mock
 flake8
 tox
 codecov
+django

@@ -3,6 +3,7 @@
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.test import TestCase
+from django_globals import globals
 
 User = get_user_model()
 
@@ -42,3 +43,7 @@ class TestMiddleware(TestCase):
         response = self.client.get("/assert-request")
 
         self.assertEqual(response.status_code, 301)
+
+    def test_startup(self):
+        self.assertTrue(globals.user is None, 'referenceing user outside of a view shouldn\' through an error')
+        self.assertTrue(globals.request is  None, 'referenceing user outside of a view shouldn\' through an error')
