@@ -21,3 +21,6 @@ docs/_build
 
 # Vim
 .*.sw[op]
+
+#virtual environments
+/venv/
